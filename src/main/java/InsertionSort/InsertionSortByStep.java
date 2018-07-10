@@ -17,6 +17,7 @@ public class InsertionSortByStep {
         for (int i = 0; i < list.length; i++) {
             System.out.print(list[i] + " ");
         }
+        System.out.println();
 
         insertionSort(list);
         System.out.println("\nBegin sort processing...");
@@ -29,6 +30,7 @@ public class InsertionSortByStep {
         for (int i = 0; i < list.length; i++) {
             int currentElement = list[i];
             int k;
+            System.out.println("Insert " + list[i] + " in subtract list");
             for (k = i - 1; k >= 0 && list[k] > currentElement; k--) {
                 list[k + 1] = list[k];
                 System.out.println("Move " +list[k] + " at index " + k + " to index " + (k + 1));
@@ -40,6 +42,7 @@ public class InsertionSortByStep {
             for (int j = 0; j <= i; j++) {
                 System.out.print(list[j] + "\t");
             }
+            System.out.println();
             System.out.println();
         }
     }
